@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<targetFramework>NET48</targetFramework>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Legend.Transactions\Legend.Transactions.csproj">
+			<Project>{ED4050B9-11C7-4A9B-AEAB-F223FC63C580}</Project>
+			<Name>Legend.Transactions</Name>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="NUnit">
+			<Version>2.7.1</Version>
+		</PackageReference>
+		<PackageReference Include="RhinoMocks">
+			<Version>3.6.1</Version>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+	  <Reference Include="System.Transactions" />
+	</ItemGroup>
+</Project>
